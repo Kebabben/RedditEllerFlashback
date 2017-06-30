@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditEllerFlashback", "RedditEllerFlashback\RedditEllerFlashback.csproj", "{ACC414E2-2BC0-41E4-B2EB-0AF5850867F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E9E011E-EE94-4150-9C01-0ADB6465B3CF} = {5E9E011E-EE94-4150-9C01-0ADB6465B3CF}
+		{4095192E-D67B-4F58-8932-BDB1EC5AE5EA} = {4095192E-D67B-4F58-8932-BDB1EC5AE5EA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetThreadsReddit", "GetThreadsReddit\GetThreadsReddit.csproj", "{4095192E-D67B-4F58-8932-BDB1EC5AE5EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetThreadsFlashback", "GetThreadsFlashback\GetThreadsFlashback.csproj", "{5E9E011E-EE94-4150-9C01-0ADB6465B3CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC414E2-2BC0-41E4-B2EB-0AF5850867F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC414E2-2BC0-41E4-B2EB-0AF5850867F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC414E2-2BC0-41E4-B2EB-0AF5850867F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC414E2-2BC0-41E4-B2EB-0AF5850867F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4095192E-D67B-4F58-8932-BDB1EC5AE5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4095192E-D67B-4F58-8932-BDB1EC5AE5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4095192E-D67B-4F58-8932-BDB1EC5AE5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4095192E-D67B-4F58-8932-BDB1EC5AE5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9E011E-EE94-4150-9C01-0ADB6465B3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9E011E-EE94-4150-9C01-0ADB6465B3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9E011E-EE94-4150-9C01-0ADB6465B3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9E011E-EE94-4150-9C01-0ADB6465B3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
