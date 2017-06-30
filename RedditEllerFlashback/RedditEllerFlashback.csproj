@@ -431,6 +431,16 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GetThreadsFlashback\GetThreadsFlashback.csproj">
+      <Project>{5e9e011e-ee94-4150-9c01-0adb6465b3cf}</Project>
+      <Name>GetThreadsFlashback</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GetThreadsReddit\GetThreadsReddit.csproj">
+      <Project>{4095192e-d67b-4f58-8932-bdb1ec5ae5ea}</Project>
+      <Name>GetThreadsReddit</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

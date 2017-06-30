@@ -8,14 +8,15 @@ using System.Xml;
 
 namespace GetThreadsReddit
 {
-    class GetRedditThreads
+    public class GetRedditThreads
     {
-        GetRedditThreads()
+        public GetRedditThreads()
         {
 
         }
 
-        List<XmlNode> GetThreads()
+        //Initial test code
+        public List<XmlNode> GetThreads()
         {
 
             //Get the data from subreddit
@@ -36,10 +37,12 @@ namespace GetThreadsReddit
             //Do ... for each thread
             foreach (XmlNode node in AllEntrys)
             {
-                Nodes.Add()
+                Nodes.Add(node);
                 // Console.WriteLine(node.ChildNodes[AttribueValues.title].InnerXml);
                 // Console.WriteLine();
             }
+
+            return Nodes;
         }
 }
 }

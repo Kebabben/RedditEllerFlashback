@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using HtmlAgilityPack;
-
+using GetThreadsFlashback;
+using GetThreadsReddit;
 
 namespace RedditEllerFlashback
 {
@@ -13,6 +14,10 @@ namespace RedditEllerFlashback
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            GetFlashbackPostsList Flashback = new GetFlashbackPostsList();
+
+            List<HtmlNode> FlashbackPostList = Flashback.GetNewPosts();
+
 
 
         }

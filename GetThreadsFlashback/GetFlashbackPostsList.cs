@@ -7,16 +7,16 @@ using HtmlAgilityPack;
 
 namespace GetThreadsFlashback
 {
-    class GetNewPostsList
+    public class GetFlashbackPostsList
     {
         String html = @"https://flashback.org/nya-inlagg";
 
-        GetNewPostsList()
+        public GetFlashbackPostsList()
         {
 
         }
          
-        List<HtmlNode> GetNewPosts()
+        public List<HtmlNode> GetNewPosts()
         {
             HtmlWeb web = new HtmlWeb();
 
