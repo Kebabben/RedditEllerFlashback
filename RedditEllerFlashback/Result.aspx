@@ -6,7 +6,11 @@
     
 
 
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Label" 
+        style="font-size: 30px; font-weight: bold; text-transform: uppercase; margin-top: 2em; align-items: center; 
+            justify-content: center; display: flex;">
+        
+    </asp:Label>
     
     
     

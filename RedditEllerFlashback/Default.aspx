@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RedditEllerFlashback._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RedditEllerFlashback._Default" %>
 
 
 
@@ -10,7 +10,7 @@
     <div id="top">
         
         <asp:Label runat="server" ID="ThreadLabel" 
-            style="font-size: 30px; font-style: oblique;" >
+            style="font-size: 30px; font-weight: bold; text-align: center" >
         </asp:Label>
 
     </div>
@@ -25,16 +25,16 @@
     
     <div id="bottom">
          <div id="left">         
-                 <asp:Button Text="Flashback" runat="server" OnClick="VoteFlashback"/>     
+                 <asp:Button class="buttons" Text="Flashback" runat="server" OnClick="VoteFlashback"/>     
          </div>
         
         <div id="right">  
-            <asp:Button Text="Reddit" runat="server" OnClick="VoteReddit"/>        
+            <asp:Button class="buttons" Text="Reddit" runat="server" OnClick="VoteReddit"/>        
          </div>
 
     </div>
 </div>
 
-    </div>
+
 
 </asp:Content>
