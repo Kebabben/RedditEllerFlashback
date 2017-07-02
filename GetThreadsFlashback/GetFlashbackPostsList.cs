@@ -22,8 +22,8 @@ namespace GetThreadsFlashback
 
             HtmlDocument htmlDoc = web.Load(html);
 
-            Console.OutputEncoding = Encoding.GetEncoding("iso-8859-1");
-            htmlDoc.OptionDefaultStreamEncoding = Encoding.GetEncoding("iso-8859-1");
+            //Console.OutputEncoding = Encoding.GetEncoding("iso-8859-1");
+            //htmlDoc.OptionDefaultStreamEncoding = Encoding.GetEncoding("iso-8859-1");
 
             
             HtmlNode[] nodes = htmlDoc.DocumentNode.SelectNodes("//a").ToArray();

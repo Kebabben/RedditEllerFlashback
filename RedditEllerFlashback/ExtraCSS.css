@@ -1,0 +1,57 @@
+﻿body {
+
+
+
+}
+
+#top,
+#bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+#top {
+    top: 0;
+    background-color: orange;
+}
+
+#bottom {
+    bottom: 0;
+    background-color: green;
+    display: inline-block;
+    
+
+}
+
+
+#left 
+{
+    background-color: red;
+    float: left;
+    width: 50%;
+    /*display: inline-block;*/
+}
+
+#right 
+{
+    background-color: blue;
+    float: right;
+    width: 50%;
+}
+
+.btn 
+{
+    display:inline-block;
+}
+
+div
+{
+    /*display: inline-block;*/
+}
+
+div Button 
+{
+    /*-display: block; */
+}
