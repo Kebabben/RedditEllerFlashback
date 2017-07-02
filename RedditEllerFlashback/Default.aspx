@@ -6,11 +6,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
+<div id="body">
     <div id="top">
-    <asp:Label runat="server" ID="FlashbackPostLabel" 
-        style="font-size: 30px; font-style: oblique; text-align: left;" >
         
-    </asp:Label>
+        <asp:Label runat="server" ID="ThreadLabel" 
+            style="font-size: 30px; font-style: oblique;" >
+        </asp:Label>
+
     </div>
     
 
@@ -22,15 +24,17 @@
         --%>
     
     <div id="bottom">
-         <div id="left">
-         
-                 <asp:Button Text="Flashback" runat="server" style="margin-left: 100px;"/>     
-
-             </div>
+         <div id="left">         
+                 <asp:Button Text="Flashback" runat="server" OnClick="VoteFlashback"/>     
+         </div>
         
         <div id="right">  
-            <asp:Button Text="Reddit" runat="server"/>
-        
+            <asp:Button Text="Reddit" runat="server" OnClick="VoteReddit"/>        
          </div>
+
     </div>
+</div>
+
+    </div>
+
 </asp:Content>

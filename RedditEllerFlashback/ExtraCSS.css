@@ -1,18 +1,18 @@
-﻿body {
-
+﻿#body {
+    height: 1000px;
 
 
 }
 
 #top,
 #bottom {
-    position: fixed;
+    position: page;
     left: 0;
     right: 0;
     height: 50%;
 }
 
-#top {
+#top {    
     top: 0;
     background-color: orange;
 }
@@ -21,8 +21,7 @@
     bottom: 0;
     background-color: green;
     display: inline-block;
-    
-
+    width: 100%;
 }
 
 
@@ -30,15 +29,15 @@
 {
     background-color: red;
     float: left;
-    width: 50%;
+    width: 40%;
     /*display: inline-block;*/
 }
 
 #right 
 {
     background-color: blue;
-    float: right;
-    width: 50%;
+    
+    /*width: 50%;*/
 }
 
 .btn 

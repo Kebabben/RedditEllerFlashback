@@ -14,7 +14,9 @@ namespace GetThreadsFlashback
         {
             //Console.OutputEncoding = System.Text.Encoding.;
 
-            
+            GetFlashbackPostsList get = new GetFlashbackPostsList();
+
+            get.GetNewPosts();
             
 
 

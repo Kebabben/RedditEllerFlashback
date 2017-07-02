@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace GetThreadsFlashback
         public List<HtmlNode> GetNewPosts()
         {
             HtmlWeb web = new HtmlWeb();
+            web.OverrideEncoding = Encoding.GetEncoding("iso-8859-1");
 
             HtmlDocument htmlDoc = web.Load(html);
 
@@ -26,13 +28,23 @@ namespace GetThreadsFlashback
             //htmlDoc.OptionDefaultStreamEncoding = Encoding.GetEncoding("iso-8859-1");
 
             
+
+
             HtmlNode[] nodes = htmlDoc.DocumentNode.SelectNodes("//a").ToArray();
 
             List<HtmlNode> Nodes = new List<HtmlNode>();
             foreach (HtmlNode item in nodes)
             {
                 if (item.OuterHtml.Contains("/t") && !item.OuterHtml.Contains("thread-goto"))
+                {
+                    //byte[] bytes = Encoding.GetEncoding("iso-8859-1").GetBytes(item.OuterHtml);
+                    //String s = Encoding.UTF8.GetString(bytes);
+                    
+                    
+                    
+
                     Nodes.Add(item);
+                }
             }
 
             return Nodes;
