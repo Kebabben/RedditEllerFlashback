@@ -13,12 +13,16 @@ namespace RedditEllerFlashback
 {
     public partial class Start : System.Web.UI.Page
     {
+
+        private bool Mobile = false;
+
+
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            if (Request.Browser.IsMobileDevice)
-                MasterPageFile = "~/Default.aspx";
+            if (Request.Browser.IsMobileDevice || Utils.fBrowserIsMobile())
+                Mobile = true;
         }
-
+        
 
         StoredThreadInfo Info = new StoredThreadInfo();
 
@@ -78,7 +82,12 @@ namespace RedditEllerFlashback
 
             }
 
-
+            if (Mobile)
+            {
+                FlashbackButton.Style["width"] = "85vw;";
+                RedditButton.Style["width"] = "85vw;";
+            }
+            
 
 
 
