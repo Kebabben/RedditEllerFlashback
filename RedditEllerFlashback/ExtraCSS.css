@@ -4,7 +4,7 @@
 
 }*/
 
-#top,
+#topstart,
 #bottom {
     position: page;
     left: 0;
@@ -12,7 +12,8 @@
     height: 50%;
 }
 
-#top {    
+
+#topstart {    
     top: 0;
     background-color: orange;
 
@@ -20,6 +21,23 @@
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+#top 
+{
+    margin-top: 0px;
+    top: 0em;
+    /*word-break: normal;*/
+    /*background-color: orange;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    text-align: center;
+    /*display: flex;*/
+}
+
+div.excerpt p 
+{
+    word-wrap: break-word;
 }
 
 #bottom {
